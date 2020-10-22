@@ -1,8 +1,7 @@
 import random 
   
-# Print multiline instruction 
-# performstring concatenation of string 
-print("Winning Rules of the Rock paper scissor game as follows: \n"
-                                +"Rock vs paper->paper wins \n"
-                                + "Rock vs scissor->Rock wins \n"
-                                +"paper vs scissor->scissor wins \n")
+# Print instructions and rules on how to play game
+print("Winning Rules of 'Rock, Paper, Scissors' is: \n"
+    "Rock vs Paper ---> PAPER WINS! \n"
+    "Rock vs Scissors ---> ROCK WINS! \n"
+    "Paper vs Scissors ---> SCISSORS WINS! \n")
