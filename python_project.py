@@ -58,6 +58,7 @@ ingredients = [
 ]
 
 
+
 def help():
     print("Welcome to your Meal Picker!")
     print("""
@@ -65,14 +66,14 @@ Enter 'Ingredients' to show the list of ingredients.
 Enter 'DONE' to quit.
 """)
 
+
 # def name_ingredient():
 #     input("Pick your first ingredient from the list! ")
 #     first_ingredient = pick_first_ingredient()
 
 
-
-def pick_second_ingredient():
-    second_ingredient = input("Pick your second ingredient from the list! ")
+# def pick_second_ingredient():
+#     second_ingredient = input("Pick your second ingredient from the list! ")
 
 
 help()
@@ -90,7 +91,17 @@ while True:
         print("Your first ingredient is " + first_ingredient)
         second_ingredient = input("Pick your last ingredient! ")
         print("With your " + first_ingredient + " and " + second_ingredient + ", you should make...")
+        if first_ingredient or second_ingredient == "potatoes" and first_ingredient or second_ingredient == "tofu":
+            final_meal = "Curry!"
+        if first_ingredient or second_ingredient == "potatoes" and first_ingredient or second_ingredient == "broth":
+            final_meal = "Potato Soup!"
+        if first_ingredient or second_ingredient == "broth" and first_ingredient or second_ingredient == "tofu":
+            final_meal = "Hot & Sour Soup!"
+        print(final_meal)
         
+
+
+
     # else:
     #     print("not working")
 
