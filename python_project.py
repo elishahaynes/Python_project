@@ -58,13 +58,31 @@ ingredients = [
 ]
 
 
+class Meals(object):
+    def __call__(self, x, y, z):
+        print(x)
+        print(y)
+        print(z)
+
+
+# meals = [
+#     "Curry",
+#     "Potato Soup",
+#     "Hot & Sour Soup"
+# ]
+
 
 def help():
     print("Welcome to your Meal Picker!")
     print("""
-Enter 'Ingredients' to show the list of ingredients.
+Enter 'ingredients' to show the list of ingredients.
+Enter 'meals' to show possible meals.
 Enter 'DONE' to quit.
 """)
+
+# def meals():
+#     x = "Potato Soup, Curry, and Hot & Sour Soup"
+#     return x
 
 
 # def name_ingredient():
@@ -82,6 +100,11 @@ while True:
 
     if item == "DONE":
         break
+    elif item == "meals":
+        several_meals = Meals()
+        several_meals("Potato Soup", "Curry", "Hot & Sour Soup")
+
+        help()
     elif item == "ingredients":
         print("Here are your Ingredients:")
         print(ingredients)
