@@ -126,15 +126,26 @@ while True:
         #     final_meal = "Hot & Sour Soup!"
         #     print(final_meal)
 
-        if first_ingredient == "potatoes" and second_ingredient == "tofu":
+        if (first_ingredient == "potatoes" or second_ingredient == "potatoes") and (first_ingredient == "tofu" or second_ingredient == "tofu"):
             final_meal = "Curry!"
             print(final_meal)
-        elif first_ingredient == "potatoes" and second_ingredient == "broth":
+        elif (first_ingredient == "potatoes" or second_ingredient == "potatoes") and (first_ingredient == "broth" or second_ingredient == "broth"):
             final_meal = "Potato Soup!"
             print(final_meal)
-        elif first_ingredient == "broth" and second_ingredient == "tofu":
+        elif (first_ingredient == "broth" or second_ingredient == "broth") and (first_ingredient == "tofu" or second_ingredient == "tofu"):
             final_meal = "Hot & Sour Soup!"
             print(final_meal)
+
+#final version if above doesn't work
+        # if first_ingredient == "potatoes" and second_ingredient == "tofu":
+        #     final_meal = "Curry!"
+        #     print(final_meal)
+        # elif first_ingredient == "potatoes" and second_ingredient == "broth":
+        #     final_meal = "Potato Soup!"
+        #     print(final_meal)
+        # elif first_ingredient == "broth" and second_ingredient == "tofu":
+        #     final_meal = "Hot & Sour Soup!"
+        #     print(final_meal)
         print("...")
         help()
 
