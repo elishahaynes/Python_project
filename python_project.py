@@ -58,7 +58,9 @@ ingredients = [
 ]
 
 
-class Meals(object):
+class Meals:
+    def __init__(self):
+        pass
     def __call__(self, x, y, z):
         print(x)
         print(y)
@@ -107,7 +109,7 @@ while True:
         help()
     elif item == "ingredients":
         print("Here are your Ingredients:")
-        print(ingredients)
+        print(", ".join(ingredients))
         first_ingredient = input("Pick an ingredient! ")
     
         # pick_first_ingredient()
