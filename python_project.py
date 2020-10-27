@@ -91,14 +91,27 @@ while True:
         print("Your first ingredient is " + first_ingredient)
         second_ingredient = input("Pick your last ingredient! ")
         print("With your " + first_ingredient + " and " + second_ingredient + ", you should make...")
-        if first_ingredient or second_ingredient == "potatoes" and first_ingredient or second_ingredient == "tofu":
+        # if first_ingredient or second_ingredient == "potatoes" + first_ingredient or second_ingredient == "tofu":
+        #     final_meal = "Curry!"
+        #     print(final_meal)
+        # elif first_ingredient or second_ingredient == "potatoes" + first_ingredient or second_ingredient == "broth":
+        #     final_meal = "Potato Soup!"
+        #     print(final_meal)
+        # elif first_ingredient or second_ingredient == "broth" + first_ingredient or second_ingredient == "tofu":
+        #     final_meal = "Hot & Sour Soup!"
+        #     print(final_meal)
+
+        if first_ingredient == "potatoes" and second_ingredient == "tofu":
             final_meal = "Curry!"
-        if first_ingredient or second_ingredient == "potatoes" and first_ingredient or second_ingredient == "broth":
+            print(final_meal)
+        elif first_ingredient == "potatoes" and second_ingredient == "broth":
             final_meal = "Potato Soup!"
-        if first_ingredient or second_ingredient == "broth" and first_ingredient or second_ingredient == "tofu":
+            print(final_meal)
+        elif first_ingredient == "broth" and second_ingredient == "tofu":
             final_meal = "Hot & Sour Soup!"
-        print(final_meal)
-        
+            print(final_meal)
+        print("...")
+        help()
 
 
 
