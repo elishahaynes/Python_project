@@ -25,7 +25,7 @@ def help():
     print("""
 Enter 'ingredients' to show the list of ingredients.
 Enter 'meals' to show possible meals.
-Enter 'DONE' to quit.
+Enter 'done' to quit.
 """)
 
 
@@ -33,8 +33,9 @@ Enter 'DONE' to quit.
 help()
 while True:
     item = input()
+    item = item.lower().replace(" ", "")    # Additional Feature Item: Stripping whitespace from before/after input in case spacebar is inadvertently pressed (Mentor recommended this as an additional feature!)
 
-    if item == "DONE":
+    if item == "done":
         break
     elif item == "meals":
         several_meals = Meals()  # Feature Item(cont. from above): Object created from class and populated with data
@@ -44,8 +45,10 @@ while True:
         print("Here are your Ingredients:")
         print(", ".join(ingredients))   # Feature Item(cont. from above): Retrieved ingredients from list
         first_ingredient = input("Pick an ingredient! ")
+        first_ingredient = first_ingredient.lower().replace(" ", "")
         print("Your first ingredient is " + first_ingredient)
         second_ingredient = input("Pick your last ingredient! ")
+        second_ingredient = second_ingredient.lower().replace(" ", "")
         print("With your " + first_ingredient + " and " + second_ingredient + ", you should make...")
 
 # If statement that decides the meal based on ingredients
